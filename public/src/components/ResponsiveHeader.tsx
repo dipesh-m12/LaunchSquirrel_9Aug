@@ -69,16 +69,37 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
             <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
               {/* Sidebar content here */}
               <li>
-                <a className="text-slate-700">Home</a>
+                <a
+                  className="text-slate-700"
+                  onClick={() => {
+                    navigate("/landing");
+                  }}
+                >
+                  Home
+                </a>
               </li>
               <EuiHorizontalRule style={{ margin: 0 }} />
               <li>
-                <a className="text-slate-700">About</a>
+                <a
+                  className="text-slate-700"
+                  onClick={() => {
+                    navigate("/aboutus");
+                  }}
+                >
+                  About
+                </a>
               </li>
               <EuiHorizontalRule style={{ margin: 0 }} />
 
               <li>
-                <a className="text-slate-700">Services</a>
+                <a
+                  className="text-slate-700"
+                  onClick={() => {
+                    navigate("/services");
+                  }}
+                >
+                  Services
+                </a>
               </li>
               <EuiHorizontalRule style={{ margin: 0 }} />
             </ul>
