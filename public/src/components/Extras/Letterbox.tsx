@@ -89,8 +89,8 @@ function Letterbox() {
         </p>
         <ContactForm />
       </div>
-      <div className="bg-base-300 border mt-12 shadow-md sm:hidden">
-        <div className="bg-base-200 flex flex-col h-64 sm:h-72 text-center justify-center px-4 py-4 sm:py-16 font-bold text-xl sm:text-2xl">
+      <div className="bg-base-300  border mt-12 shadow-md sm:hidden">
+        <div className="sm:bg-base-200 bg-gray-200   flex flex-col h-64 sm:h-72 text-center justify-center px-4 py-4 sm:py-16 font-bold text-xl sm:text-2xl">
           <p className="mb-6">
             Join our wishlist to get <br className="sm:hidden" />
             <span className="text-slate-600 indent-3"> Premium Membership</span>

@@ -9,14 +9,21 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
     <>
       <div className="w-full flex  sm:gap-12 min-h-[7vh] sm:min-h-[10vh] bg-[#1A1D29] bg-opacity-5 backdrop-blur-md shadow-md fixed max-h-[10vh] items-center justify-between px-3 sm:px-12   z-10">
         <div className=" sm:grow-0 mr-auto">
-          <img alt="_" src={squirrel} className="size-20 sm:size-20" />
+          <img
+            alt="_"
+            src={squirrel}
+            className="size-20 sm:size-20"
+            onClick={() => {
+              navigate("/");
+            }}
+          />
         </div>
         <div role="tablist" className="tabs ml-auto hidden sm:flex sm:mr-9">
           <a
             role="tab"
             className="tab tab-active text-bold text-xl"
             onClick={() => {
-              navigate("/landing");
+              navigate("/");
             }}
           >
             Home
@@ -38,6 +45,15 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
             }}
           >
             Services
+          </a>
+          <a
+            role="tab"
+            className="tab text-bold text-xl"
+            onClick={() => {
+              navigate("/contactus");
+            }}
+          >
+            ContactUs
           </a>
         </div>
 
@@ -70,9 +86,9 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
               {/* Sidebar content here */}
               <li>
                 <a
-                  className="text-slate-700"
+                  className="text-slate-700 dark:text-white"
                   onClick={() => {
-                    navigate("/landing");
+                    navigate("/");
                   }}
                 >
                   Home
@@ -81,7 +97,7 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
               <EuiHorizontalRule style={{ margin: 0 }} />
               <li>
                 <a
-                  className="text-slate-700"
+                  className="text-slate-700 dark:text-white"
                   onClick={() => {
                     navigate("/aboutus");
                   }}
@@ -93,12 +109,23 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
 
               <li>
                 <a
-                  className="text-slate-700"
+                  className="text-slate-700 dark:text-white"
                   onClick={() => {
                     navigate("/services");
                   }}
                 >
                   Services
+                </a>
+              </li>
+              <EuiHorizontalRule style={{ margin: 0 }} />
+              <li>
+                <a
+                  className="text-slate-700 dark:text-white"
+                  onClick={() => {
+                    navigate("/contactus");
+                  }}
+                >
+                  Contact Us
                 </a>
               </li>
               <EuiHorizontalRule style={{ margin: 0 }} />

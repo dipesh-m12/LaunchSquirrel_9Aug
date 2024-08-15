@@ -30,7 +30,7 @@ function Footer() {
               <IoMail className="scale-125" />
             </a>
             <a
-              href="https://www.linkedin.com/in/samruddhi-khanvilkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              href="https://www.linkedin.com/company/squirrelip/"
               target="_blank"
               className="text-gray-400"
             >

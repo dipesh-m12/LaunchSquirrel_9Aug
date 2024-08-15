@@ -136,7 +136,7 @@ function AboutUs() {
       </section>
       <section className="flex flex-col sm:flex-row py-9 sm:py-20 px-4 sm:px-24 gap-7 sm:gap-12 mb-12 sm:mb-16 sm:pt-52 pt-0">
         <div className="basis-2/5 sm:self-center">
-          <p className="text-gray-600 text-lg sm:text-3xl">Achievements</p>
+          {/* <p className="text-gray-600 text-lg sm:text-3xl">Achievements</p> */}
           <p className="text-slate-900 font-bold text-4xl sm:text-7xl mb-6 text-center sm:text-left">
             Our
             <br className="hidden sm:flex" /> Achievements
