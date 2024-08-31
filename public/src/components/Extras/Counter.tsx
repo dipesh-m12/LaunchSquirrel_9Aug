@@ -8,7 +8,7 @@ function Counter() {
     seconds: "0",
   });
   useEffect(() => {
-    const countdownDate = new Date("2024-09-01T23:59:59"); // Replace with your launch date
+    const countdownDate = new Date("2024-09-015T23:59:59"); // Replace with your launch date
 
     const interval = setInterval(() => {
       const now = new Date();
