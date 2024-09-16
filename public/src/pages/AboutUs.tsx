@@ -177,7 +177,7 @@ function AboutUs() {
         <p className="font-bold text-5xl sm:text-7xl mb-6 text-center tracking-wide">
           Coming Soon!
         </p>
-        <Counter />
+        {/* <Counter /> */}
       </section>
       <section
         ref={divRef}

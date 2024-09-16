@@ -85,7 +85,7 @@ function Landing() {
             src={comingsoon}
             className="  my-5 mb-7 sm:mb-10 sm:my-0 sm:mt-5  size-11/12 mx-auto sm:size-auto mix-blend-multiply"
           />
-          <Counter />
+          {/* <Counter /> */}
         </div>
       </header>
       <main className="">
