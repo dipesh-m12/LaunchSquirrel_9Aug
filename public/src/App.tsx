@@ -6,6 +6,7 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import { EuiProvider } from "@elastic/eui";
+import MarketPlace from "./pages/MarketPlace";
 function App() {
   return (
     <EuiProvider colorMode="light">
@@ -14,6 +15,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/landing" element={<Landing />} />
+        <Route path="/marketplace" element={<MarketPlace />} />
         <Route path="/" element={<Landing />} />
         <Route path="*" element={<Landing />} />
       </Routes>

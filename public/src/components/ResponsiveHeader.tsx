@@ -7,7 +7,7 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="w-full flex  sm:gap-12 min-h-[7vh] sm:min-h-[10vh] bg-[#1A1D29] bg-opacity-5 backdrop-blur-md shadow-md fixed max-h-[10vh] items-center justify-between px-3 sm:px-12   z-10">
+      <div className="w-full flex  sm:gap-12 min-h-[7vh] sm:min-h-[10vh] bg-[#DEDFE4]  shadow-md fixed max-h-[10vh] items-center justify-between px-3 sm:px-12   z-10">
         <div className=" sm:grow-0 mr-auto">
           <img
             alt="_"
@@ -54,6 +54,15 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
             }}
           >
             ContactUs
+          </a>
+          <a
+            role="tab"
+            className="tab text-bold text-xl"
+            onClick={() => {
+              navigate("/marketplace");
+            }}
+          >
+            Marketplace
           </a>
         </div>
 
