@@ -55,7 +55,7 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
           >
             ContactUs
           </a>
-          <a
+          {/* <a
             role="tab"
             className="tab text-bold text-xl"
             onClick={() => {
@@ -63,7 +63,7 @@ function ResponsiveHeader({ scrollToLetter }: { scrollToLetter: () => void }) {
             }}
           >
             Marketplace
-          </a>
+          </a> */}
         </div>
 
         <div className="grow-0 ">
